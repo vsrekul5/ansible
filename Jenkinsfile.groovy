@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vsrekul5/python-app.git']]])                                
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vsrekul5/ansible.git']]])                                
             }
         }
         stage('create image'){
